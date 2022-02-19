@@ -1,0 +1,189 @@
+@media all {
+  .section.footer {
+    background: url(https://portaldefi.com/assets/black-fade) repeat-x center;
+    background-size: cover;
+    height: 20vh;
+
+  }
+  .section.footer .container {
+    width: 100%;
+    display: inline-block;
+  }
+  @media (min-width: 1560px) {
+    .section .container {
+      max-width: 1360px;
+    }
+  }
+  .container {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+  }
+  div,
+  p,
+  a,
+  img,
+  i,
+  ul,
+  li {
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: baseline;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  :focus {
+    outline: 0;
+  }
+  i {
+    font-style: italic;
+  }
+  img {
+    -ms-interpolation-mode: bicubic;
+  }
+  * {
+    font-family: sans-serif;
+  }
+  ::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 0.4;
+  }
+  p {
+    opacity: 0.8;
+    font-family: "AvenirNext-Medium";
+    font-size: 22px;
+    color: #ffffff;
+    letter-spacing: -0.46px;
+    line-height: 28px;
+  }
+  p.small {
+    opacity: 0.8;
+    font-family: "AvenirNext-Medium";
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: -0.46px;
+    line-height: 16px;
+  }
+  a {
+    color: #ccc;
+    font-size: inherit;
+    font-family: "AvenirNext-Medium";
+  }
+  a:hover {
+    color: red;
+  }
+  .section {
+    display: table;
+    float: left;
+    width: 100%;
+    text-align: center;
+    min-width: 1160px;
+    position: relative;
+    padding: 30px 0;
+    table-layout: fixed;
+  }
+  .section .container {
+    width: 100%;
+    max-width: 1120px;
+    display: inline-block;
+  }
+  @media (min-width: 1560px) {
+    .section .container {
+      max-width: 1360px;
+    }
+  }
+  @media (max-width: 1080px) {
+    p {
+      font-size: 16px !important;
+      letter-spacing: 0px !important;
+      line-height: 24px !important;
+      text-align: center;
+    }
+    .section {
+      min-width: 100%;
+      height: auto !important;
+      width: 100%;
+      min-height: auto !important;
+    }
+    .section .container {
+      width: 88% !important;
+      margin: 0 6%;
+      height: auto !important;
+      text-align: center;
+    }
+  }
+  .footer .container {
+    display: inline-block;
+  }
+  .footer .container ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+    float: left;
+    font-size: 22px;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left {
+    flex: 0 0 10%;
+  }
+  ul.feature-resources {
+    list-style: none;
+    padding-top: 20px;
+  }
+  ul.feature-resources li {
+    font-size: 14px;
+    padding: 10px;
+    font-family: "AvenirNext-Medium";
+    color: #ffffff;
+    opacity: 0.8;
+    line-height: 14px;
+    letter-spacing: inherit;
+  }
+  .logo-footer {
+    height: 30px !important;
+    margin-right: 40px;
+  }
+}
+/*! CSS Used from: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css */
+.fa-brands {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+.fa-brands {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+}
+.fa-github:before {
+  content: "\f09b";
+}
+.fa-linkedin-in:before {
+  content: "\f0e1";
+}
+.fa-medium:before {
+  content: "\f23a";
+}
+.fa-telegram:before {
+  content: "\f2c6";
+}
+.fa-twitter:before {
+  content: "\f099";
+}

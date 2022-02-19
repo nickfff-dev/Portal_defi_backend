@@ -1,0 +1,131 @@
+@media all {
+    @media (min-width: 1560px) {
+      .section .container {
+        max-width: 1360px;
+      }
+    }
+    .container {
+      width: 100%;
+      display: block;
+      padding: 1rem;
+    }
+    .section.press {
+      height: 100vh;
+      background: white;
+      padding-top: 50px;
+      padding-bottom: 0px;
+      background-size: cover;
+      height: auto;
+      text-align: center;
+    }
+    .section.press .container {
+      text-align: center;
+      padding: 0px 0 50px 0;
+      width: 100%;
+    }
+    .section.press .text h1 {
+      text-align: left;
+      line-height: 42px;
+      font-size: 22px;
+      color: rgb(108, 108, 114);
+      text-shadow: none;
+    }
+    .section.press .text {
+      display: inline-block;
+    }
+    .section.press .logos {
+      display: inline-block;
+      width: 100%;
+    }
+    .section.press .logos img {
+      display: inline;
+      margin: 0 60px;
+      padding: 40px;
+      max-height: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      float: center;
+    }
+    div,
+    h1,
+    img {
+      background: transparent;
+      border: 0;
+      font-family: inherit;
+      font-size: 100%;
+      font-style: inherit;
+      margin: 0;
+      outline: 0;
+      padding: 0;
+      text-align: left;
+      vertical-align: baseline;
+      text-decoration: none;
+    }
+    :focus {
+      outline: 0;
+    }
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+    h1 {
+      font-size: 100%;
+      font-weight: normal;
+    }
+    * {
+      font-family: sans-serif;
+    }
+    ::-webkit-input-placeholder {
+      color: #fff;
+      opacity: 0.4;
+    }
+    h1 {
+      font-family: "AvenirNextLTPro-Demi";
+      font-size: 68px;
+      color: #ffffff;
+      letter-spacing: -0.24px;
+      line-height: 90px;
+      margin-bottom: 12px;
+      margin-top: 12px;
+    }
+    .section {
+      display: table;
+      float: left;
+      width: 100%;
+      text-align: center;
+      min-width: 1160px;
+      position: relative;
+      padding: 30px 0;
+      table-layout: fixed;
+    }
+    .section .container {
+      width: 100%;
+      max-width: 1120px;
+      display: inline-block;
+    }
+    @media (min-width: 1560px) {
+      .section .container {
+        max-width: 1360px;
+      }
+    }
+    @media (max-width: 1080px) {
+      h1 {
+        font-size: 32px !important;
+        line-height: 38px !important;
+        letter-spacing: -1px !important;
+        text-align: center;
+        margin-bottom: 2px;
+      }
+      .section {
+        min-width: 100%;
+        height: auto !important;
+        width: 100%;
+        min-height: auto !important;
+      }
+      .section .container {
+        width: 88% !important;
+        margin: 0 6%;
+        height: auto !important;
+        text-align: center;
+      }
+    }
+  }

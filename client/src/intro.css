@@ -1,0 +1,351 @@
+@media all {
+    @media (min-width: 1560px) {
+      .section .container {
+        max-width: 1360px;
+      }
+    }
+    @media (max-width: 1080px) {
+      h2 {
+        font-family: "AvenirNext-Medium";
+        font-size: 32px;
+        color: #ffffff;
+        letter-spacing: -2px;
+        line-height: 60px;
+        margin-bottom: 12px;
+      }
+    }
+    .container {
+      width: 100%;
+      display: block;
+      padding: 1rem;
+    }
+    section {
+      width: 100%;
+      height: 10vh;
+      position: relative;
+      display: grid;
+      grid-gap: 1rem;
+    }
+    section h2 {
+      opacity: 0.5;
+      font-family: "AvenirNext-Medium";
+      font-size: 13px;
+      color: #ffffff;
+      letter-spacing: -0.46px;
+      line-height: 14px;
+      position: absolute;
+      top: 10px;
+    }
+    section.one {
+      top: -6rem;
+      z-index: 3;
+    }
+    section.two {
+      top: 6em;
+      z-index: 2;
+    }
+    section.three {
+      top: 4rem;
+      z-index: 0;
+    }
+    section:hover div.layer {
+      opacity: 0.95;
+      z-index: 999;
+      box-shadow: -4rem 4rem 6rem rgba(0, 0, 0, 0.2);
+    }
+    .layer-container {
+      position: relative;
+      display: block;
+    }
+    .layer-container div.layer {
+      position: absolute;
+      width: 24rem;
+      height: 16rem;
+      margin: 0 auto;
+      transition: 0.2s all ease-in-out;
+      opacity: 1;
+      background-color: #afafaf;
+      transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+      border-radius: 10px;
+      box-shadow: -4rem 4rem 6rem rgba(0, 0, 0, 0.2);
+    }
+    .layer-container div.layer *,
+    .layer-container div.layer div {
+      top: -1rem;
+      right: -1rem;
+    }
+    .layer-container div.layer.functions {
+      background: #0a0a0a;
+    }
+    .layer-container div.layer.map {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .layer-container div.layer.platforms {
+      background: #0a0a0a;
+    }
+    .anim,
+    .anim svg {
+      position: relative;
+      width: 95%;
+      height: 90%;
+    }
+    .anim path {
+      stroke-width: 5;
+    }
+    div,
+    h1,
+    h2,
+    p,
+    img {
+      background: transparent;
+      border: 0;
+      font-family: inherit;
+      font-size: 100%;
+      font-style: inherit;
+      margin: 0;
+      outline: 0;
+      padding: 0;
+      text-align: left;
+      vertical-align: baseline;
+      text-decoration: none;
+    }
+    :focus {
+      outline: 0;
+    }
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+    h1,
+    h2 {
+      font-size: 100%;
+      font-weight: normal;
+    }
+    * {
+      font-family: sans-serif;
+    }
+    .black-fade {
+      background: url("https://portaldefi.com/assets/black-fade") repeat-x center;
+      background-size: auto 100%;
+      height: 160px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: -80px;
+      z-index: 1;
+    }
+    ::-webkit-input-placeholder {
+      color: #fff;
+      opacity: 0.4;
+    }
+    h1 {
+      font-family: "AvenirNext-Medium";
+      font-size: 68px;
+      color: #ffffff;
+      letter-spacing: -0.24px;
+      line-height: 90px;
+      margin-bottom: 12px;
+      margin-top: 12px;
+    }
+    h2 {
+      font-family: "AvenirNext-Medium";
+      font-size: 50px;
+      color: #ffffff;
+      letter-spacing: -2px;
+      line-height: 62px;
+      margin-bottom: 12px;
+    }
+    p {
+      opacity: 0.8;
+      font-family:"AvenirNext-Medium";
+      
+      font-size: 22px;
+      color: #ffffff;
+      letter-spacing: -0.46px;
+      line-height: 28px;
+    }
+    p.small {
+      opacity: 0.8;
+      font-family: "AvenirNext-Medium";
+      font-size: 14px;
+      color: #ffffff;
+      letter-spacing: -0.46px;
+      line-height: 16px;
+    }
+    .section {
+      display: table;
+      float: left;
+      width: 100%;
+      text-align: center;
+      min-width: 1160px;
+      position: relative;
+      padding: 30px 0;
+      table-layout: fixed;
+    }
+    .section .container {
+      width: 100%;
+      max-width: 1120px;
+      display: inline-block;
+    }
+    .section.intro {
+      height: 680px;
+      background-image: linear-gradient(50deg, #075f91 30%, #941662 120%);
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+    .section.intro .container .text {
+      float: left;
+      width: 534px;
+      margin-top: 166px;
+    }
+    .section.intro .text h1 {
+      font-size: 68px;
+      letter-spacing: -0.24px;
+      line-height: 75px;
+      margin-bottom: 12px;
+      margin-top: 12px;
+    }
+    .section.intro .text p {
+      font-size: 28px;
+      color: #ffffff;
+      letter-spacing: -0.16px;
+      line-height: 38px;
+    }
+    .section.intro .container .app {
+      float: right;
+      width: 534px;
+      margin-top: 100px;
+      text-align: center;
+    }
+    .section.intro .container .app img {
+      width: 100%;
+      border: solid 4px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      margin-left: -4px;
+      background: #000000;
+      box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.3),
+        0 52px 44px 0 rgba(11, 16, 19, 0.19);
+    }
+    .section.intro .container .app p {
+      font-size: 18px;
+      display: inline-block;
+     
+      line-height: 40px;
+      border-radius: 0 0 8px 8px;
+      padding: 0 16px;
+      margin-top: -3px;
+      z-index: 1;
+      box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.3),
+        0 52px 44px 0 rgba(11, 16, 19, 0.19);
+    }
+    .section.intro .container .desc {
+      display: block;
+      position: relative;
+      width: 100%;
+      text-align: center;
+      float: right;
+    }
+    .section.intro .desc p.small {
+      font-size: 15px;
+      line-height: 20px;
+      margin-top: 40px;
+      z-index: 1;
+      opacity: 0.5;
+      font-family: "AvenirNext-Medium";
+      float: left;
+    }
+    @media (min-width: 1560px) {
+      .section .container {
+        max-width: 1360px;
+      }
+      .section.intro .container .text {
+        margin-top: 96px;
+      }
+      .section.intro .container .app {
+        float: right;
+        width: 920px;
+        margin-top: 32px;
+        text-align: center;
+      }
+    }
+    @media (max-width: 1080px) {
+      h2 {
+        font-family: "AvenirNext-Medium";
+        font-size: 32px;
+        color: #ffffff;
+        letter-spacing: -2px;
+        line-height: 60px;
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-size: 32px !important;
+        line-height: 38px !important;
+        letter-spacing: -1px !important;
+        text-align: center;
+        margin-bottom: 2px;
+      }
+      p {
+        font-size: 16px !important;
+        letter-spacing: 0px !important;
+        line-height: 24px !important;
+        text-align: center;
+      }
+      .section {
+        min-width: 100%;
+        height: auto !important;
+        width: 100%;
+        min-height: auto !important;
+      }
+      .section .container {
+        width: 88% !important;
+        margin: 0 6%;
+        height: auto !important;
+        text-align: center;
+      }
+      .section.intro .container .text {
+        width: 100%;
+        display: inline-block;
+        float: none;
+        margin-top: 80px;
+        text-align: center;
+      }
+      .section.intro .container .app {
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 60%;
+      }
+      .section.intro .container .app p {
+        padding: 8px 16px;
+      }
+      .section.intro .container .desc {
+        padding: 8px 16px;
+      }
+    }
+    @media only screen and (min-width: 1560px) {
+      .section.intro {
+        background-image: linear-gradient(50deg, #075f91 30%, #941662 120%);
+        padding-top: 30px;
+        padding-bottom: 40px;
+        max-height: 760px;
+      }
+      .section.intro .container .text {
+        width: 50%;
+        display: inline-block;
+        float: none;
+        margin-top: 80px;
+        text-align: center;
+      }
+      .section.intro .container .app {
+        width: 40%;
+        margin-top: 24px;
+        margin-bottom: 10%;
+      }
+      section {
+        width: 100%;
+        height: 8vh;
+      }
+    }
+  }
+
+
+

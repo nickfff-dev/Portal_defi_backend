@@ -1,0 +1,229 @@
+@media all {
+    @media (min-width: 1560px) {
+      .section .container {
+        max-width: 1360px;
+      }
+    }
+    .container {
+      width: 100%;
+      display: block;
+      padding: 1rem;
+    }
+    div,
+    span,
+    h1,
+    p,
+    img,
+    b {
+      background: transparent;
+      border: 0;
+      font-family: inherit;
+      font-size: 100%;
+      font-style: inherit;
+      margin: 0;
+      outline: 0;
+      padding: 0;
+      text-align: left;
+      vertical-align: baseline;
+      text-decoration: none;
+    }
+    :focus {
+      outline: 0;
+    }
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+    h1 {
+      font-size: 100%;
+      font-weight: normal;
+      font-family: "AvenirNextLTPro-Bold";
+    }
+    * {
+      font-family: sans-serif;
+    }
+    .black-fade {
+      background: url("https://portaldefi.com/assets/black-fade") repeat-x center;
+      background-size: auto 100%;
+      height: 160px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: -80px;
+      z-index: 1;
+    }
+    b {
+      font-family:"AvenirNextLTPro-Bold" !important;
+    }
+    ::-webkit-input-placeholder {
+      color: #fff;
+      opacity: 0.4;
+    }
+    h1 {
+      font-family: "AvenirNextLTPro-Demi";
+      font-size: 68px;
+      color: #ffffff;
+      letter-spacing: -0.24px;
+      line-height: 90px;
+      margin-bottom: 12px;
+      margin-top: 12px;
+    }
+    p {
+      opacity: 0.8;
+      font-family: "AvenirNext-Medium ";
+      font-size: 22px;
+      color: #ffffff;
+      letter-spacing: -0.46px;
+      line-height: 28px;
+    }
+    .section {
+      display: table;
+      float: left;
+      width: 100%;
+      text-align: center;
+      min-width: 1160px;
+      position: relative;
+      padding: 30px 0;
+      table-layout: fixed;
+    }
+    .section .container {
+      width: 100%;
+      max-width: 1120px;
+      display: inline-block;
+    }
+    .section.exchange {
+      background: url("https://portaldefi.com/assets/background-exchange.jpg")
+        center no-repeat #0f122d;
+      background-size: cover;
+      min-height: 760px;
+      height: auto;
+      text-align: center;
+    }
+    .section.exchange .container {
+      text-align: center;
+      padding: 60px 0 160px 0;
+    }
+    span.subline {
+      text-align: center;
+      font-family: "AvenirNextLTPro-Demi";
+      font-size: 16px;
+      color: #ffffff;
+      letter-spacing: 1.6px;
+      text-align: center;
+      padding: 8px 16px;
+      border: solid 2px #fff;
+      margin: 96px 0 20px 0;
+      display: inline-block;
+      line-height: 20px;
+    }
+    .section.exchange h1 {
+      text-align: center;
+      line-height: 68px;
+    }
+    .section.exchange .text {
+      display: inline-block;
+    }
+    .section.exchange .text > p {
+      float: center;
+      width: 100%;
+      line-height: 30px;
+      margin-left: 32px;
+      color: #fff;
+      opacity: 0.8;
+      font-size: 22px;
+    }
+    .section.exchange .features {
+      display: inline-block;
+      width: 100%;
+      margin-top: 40px;
+      text-align: center;
+      opacity: 0.8;
+    }
+    .section.exchange .features span {
+      display: inline-block;
+      width: 356px;
+      font-family: "AvenirNext-Medium";
+      font-size: 14px;
+      color: #ffffff;
+      letter-spacing: -0.25px;
+      text-align: center;
+      line-height: 24px;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+      padding: 0 48px;
+    }
+    .section.exchange .to-laptop {
+      width: 80%;
+      max-width: 1120px;
+      opacity: 0.8;
+    }
+    span.subline {
+      text-align: center;
+      font-family: "AvenirNextLTPro-Demi";
+      font-size: 16px;
+      color: #ffffff;
+      letter-spacing: 1.6px;
+      text-align: center;
+      padding: 8px 16px;
+      border: solid 2px #fff;
+      margin: 96px 0 20px 0;
+      display: inline-block;
+      line-height: 20px;
+    }
+    @media (min-width: 1560px) {
+      .section .container {
+        max-width: 1360px;
+      }
+    }
+    @media (max-width: 1080px) {
+      h1 {
+        font-size: 32px !important;
+        line-height: 38px !important;
+        letter-spacing: -1px !important;
+        text-align: center;
+        margin-bottom: 2px;
+      }
+      p {
+        font-size: 16px !important;
+        letter-spacing: 0px !important;
+        line-height: 24px !important;
+        text-align: center;
+      }
+      span.subline {
+        margin-top: 48px;
+      }
+      .section {
+        min-width: 100%;
+        height: auto !important;
+        width: 100%;
+        min-height: auto !important;
+      }
+      .section .container {
+        width: 88% !important;
+        margin: 0 6%;
+        height: auto !important;
+        text-align: center;
+      }
+      .section.exchange .container {
+        padding-bottom: 60px;
+      }
+      .section.exchange .text {
+        text-align: center;
+        margin-bottom: 48px;
+      }
+      .section.exchange .text > p {
+        width: 100%;
+        margin: 0;
+      }
+      .section.exchange .features {
+        margin-top: 24px;
+        margin-bottom: 12px;
+        text-align: center;
+      }
+      .section.exchange .features span {
+        width: 100%;
+        max-width: 576px;
+        padding: 0;
+        margin-bottom: 24px;
+        margin-top: 8px;
+      }
+    }
+  }

@@ -1,0 +1,192 @@
+@media (min-width: 1560px) {
+    .section .container {
+      max-width: 1360px;
+    }
+  }
+  .container {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+  }
+  div,
+  h1,
+  form {
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: baseline;
+    text-decoration: none;
+  }
+  input {
+    vertical-align: middle;
+  }
+  :focus {
+    outline: 0;
+  }
+  input {
+    overflow: visible;
+  }
+  h1 {
+    font-size: 100%;
+    font-weight: normal;
+  }
+  * {
+    font-family: sans-serif;
+  }
+  input,
+  textarea {
+    font-family: "AvenirNextLTPro-Demi";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  ::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 0.4;
+  }
+  h1 {
+    font-family: "AvenirNextLTPro-Demi";
+    font-size: 68px;
+    color: #ffffff;
+    letter-spacing: -0.24px;
+    line-height: 90px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+  .section {
+    display: table;
+    float: right;
+    width: 100%;
+    text-align: center;
+    min-width: 1160px;
+    position: relative;
+    padding: 30px 0;
+    table-layout: fixed;
+  }
+  .section .container {
+    width: 100%;
+    max-width: 1120px;
+    display: inline-block;
+  }
+  .section.institutions {
+    background: url(https://portaldefi.com/assets/background-institutions.jpg) top
+      #081119;
+    background-size: cover;
+    height: 60vh;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .section.institutions .container {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .section.institutions .container h1 {
+    text-align: center;
+    margin-top: 64px;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+  }
+  .section.institutions form {
+    width: 576px;
+    display: inline-block;
+    margin-top: 24px;
+  }
+  .section.institutions form input.field {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    width: 284px;
+    padding: 0 20px;
+    height: 56px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 0 12px 0;
+    transition: 0.2s;
+  }
+  .section.institutions form textarea {
+    font-family: "AvenirNextLTPro-Demi";
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    height: 96px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0;
+    transition: 0.2s;
+    resize: none;
+  }
+  .section.institutions form button.submit {
+    color: #fff;
+    font-family: "AvenirNextLTPro-Demi";
+    line-height: 32px;
+    padding: 0 48px;
+    background: #00bc7a;
+    border-radius: 99px;
+    font-size: 16px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    transition: 0.2s;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 12px;
+    -webkit-appearance: none;
+  }
+  .section.institutions form button.submit:hover {
+    background: #05cd87;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+  }
+  .section.institutions form button.submit:active {
+    background: #01a56b;
+    box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+  @media (min-width: 1560px) {
+    .section .container {
+      max-width: 1360px;
+    }
+  }
+  @media (max-width: 1080px) {
+    h1 {
+      font-size: 32px !important;
+      line-height: 38px !important;
+      letter-spacing: -1px !important;
+      text-align: center;
+      margin-bottom: 2px;
+    }
+    .section {
+      min-width: 100%;
+      height: auto !important;
+      width: 100%;
+      min-height: auto !important;
+    }
+    .section .container {
+      width: 88% !important;
+      margin: 0 6%;
+      height: auto !important;
+      text-align: center;
+    }
+    .section.institutions .container h1 {
+      margin-top: 48px;
+    }
+    .section.institutions form {
+      width: 100%;
+      margin-bottom: 48px;
+    }
+    .section.institutions form input.field {
+      width: 100%;
+    }
+    .section.institutions form textarea {
+      width: 100%;
+      padding: 20px;
+    }
+  }
