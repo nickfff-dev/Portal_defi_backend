@@ -42,7 +42,7 @@
       font-family: sans-serif;
     }
     .black-fade {
-      background: url("https://portaldefi.com/assets/black-fade") repeat-x center;
+      background: url("./images/black-fade.jpg") repeat-x center;
       background-size: auto 100%;
       height: 160px;
       width: 100%;
@@ -91,7 +91,7 @@
       display: inline-block;
     }
     .section.exchange {
-      background: url("https://portaldefi.com/assets/background-exchange.jpg")
+      background: url("./images/background-exchange.jpg")
         center no-repeat #0f122d;
       background-size: cover;
       min-height: 760px;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import "./intro.css"
 import anime from 'animejs/lib/anime.es.js';
+import Wallet from "./images/portal-app-wallet.jpg";
+import Btc from "./images/btc.jpg"
 
 
 class Intro extends Component {
@@ -85,7 +87,7 @@ for (var i = 0; i < pathEls.length; i++) {
     <div className="layer-container">
       <div className="layer map">
       <h2>Portal DeFi Apps</h2>
-        <img src="https://portaldefi.com/assets/portal-app-wallet.jpg" alt="app-wallet"/>
+        <img src={Wallet} alt="app-wallet"/>
       </div>
     </div>
   </section>
@@ -93,7 +95,7 @@ for (var i = 0; i < pathEls.length; i++) {
   <section className="three" id="layer1" style={{ transform: "translateX(0px)" }}>
     <div className="layer-container">
       <div className="layer platforms">
-        <img src="https://portaldefi.com/assets/btc.jpg"  alt="btc"/>
+        <img src={Btc}  alt="btc"/>
       </div>
     </div>
   </section>

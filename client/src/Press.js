@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import "./press.css"
+import coindesk from './images/logos/coindesk.png';
+import cointelegraph from "./images/logos/Cointelegraph_logo.png";
+import businesswire from "./images/logos/businesswire.png";
+import finsmes from "./images/logos/finsmes-logo.png"
 
 class Press extends Component {
     render() {
@@ -12,10 +16,10 @@ class Press extends Component {
 
         <div className="press">
     <div className="logos">
-        <img src="https://portaldefi.com/assets/logos/coindesk.png" alt="coindesk"/>
-        <img src="https://portaldefi.com/assets/logos/Cointelegraph_logo.png" alt="cointelegraph"/>
-        <img src="https://portaldefi.com/assets/logos/businesswire.png" alt="businesswire"/>
-        <img src="https://portaldefi.com/assets/logos/finsmes-logo.png" alt="finsmes"/>
+        <img src={coindesk} alt="coindesk"/>
+        <img src={cointelegraph} alt="cointelegraph"/>
+        <img src={businesswire} alt="businesswire"/>
+        <img src={finsmes} alt="finsmes"/>
     </div>
 </div>
 

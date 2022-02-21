@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import "./header.css";
+import Logo from "./images/portal-logo.gif"
+import Menuopen from "./images/menu-open.svg"
+import Menuclose from "./images/menu-close.svg"
 
 
 
@@ -14,15 +17,15 @@ class Header extends Component {
             <div className="header">
             <div className="header-container">
               <div className="logo">
-                <img src="https://portaldefi.com/assets/portal-logo.gif" alt="header-logo"/>
+                <img src={Logo} alt="header-logo"/>
               </div>
               <div className="menu-container">
                 <div className="menu-open">
-                  <img src="https://portaldefi.com/assets/menu-open.svg" alt="open-menu"/> 
+                  <img src={Menuopen} alt="open-menu"/> 
                 </div>
                 <div className="menu">
                   <div className="menu-close">
-                    <img src="https://portaldefi.com/assets/menu-close.svg" alt="close-menu"/> 
+                    <img src={Menuclose} alt="close-menu"/> 
                   </div>
                   <div className="tabs" id="website-menu">
                     <a href="/" className="selected">DeFi on Bitcoin</a>

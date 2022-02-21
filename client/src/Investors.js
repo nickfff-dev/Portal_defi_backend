@@ -1,7 +1,41 @@
 import React, { Component } from 'react';
 import "./investors.css"
+import cb from "./images/logos/cb.png"
+import republic from "./images/logos/republic.svg"
+import xrp from "./images/logos/xrp.png"
+import b21 from "./images/logos/b21.png"
+import okex from "./images/logos/okex.png"
+import azer from "./images/logos/azer.jpg"
+import kryptal from "./images/logos/kryptal.png"
+import ld from "./images/logos/ld.jpg"
+import ma from "./images/logos/ma.png"
+import ngc from "./images/logos/ngc.png"
+import shima from "./images/logos/shima.png"
+import gate from "./images/logos/gate.png"
+import monday from "./images/logos/monday.jpg"
+import wealth from "./images/logos/wealth.jpeg"
+import oig from "./images/logos/oig.png"
+import taureon from "./images/logos/taureon.png"
+import ark from "./images/logos/ark.png"
+import lotus from "./images/logos/lotus.png"
+import ac from "./images/logos/ac.svg"
+import a41 from "./images/logos/a41.png"
+import lion from "./images/logos/2-Lion-line.jpg"
+import titan from "./images/logos/4 - Titan-Ventures.png"
+import bigcoin from "./images/logos/Bigcoin.png"
+import ff from "./images/logos/FF_Ventures.jpg"
+import panda from "./images/logos/Panda_1.png"
+import pragma from "./images/logos/pragma-invest-logo--BK.png"
+import r930 from "./images/logos/R-930.png"
+
 
 class Investors extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+                investordata: [cb, republic, xrp, b21, okex, azer, kryptal, ld, ma, ngc, shima, gate, monday, wealth, oig, taureon, ark, lotus, ac, a41, lion, titan, bigcoin, ff, panda, pragma, r930]
+        }
+    }
     render() {
         return (
             <div className="section investors" id="investors">
@@ -12,34 +46,11 @@ class Investors extends Component {
         </div> 
         
         <div className="investor_logos">
-    <img src="https://portaldefi.com/assets/logos/cb.png" alt='coinbase'/>
-    <img src="https://portaldefi.com/assets/logos/republic.svg"  alt='republic' />
-    <img src="https://portaldefi.com/assets/logos/xrp.png"  alt="xrp" />
-    <img src="https://portaldefi.com/assets/logos/b21.png"   alt="b21" />
-    <img src="https://portaldefi.com/assets/logos/okex.png"   alt="okex"/>
-    <img src="https://portaldefi.com/assets/logos/azer.jpg"   alt='azer' />
-    <img src="https://portaldefi.com/assets/logos/kryptal.png"   alt="kryptal"         />
-    <img src="https://portaldefi.com/assets/logos/ld.jpg"    alt="ld"   />
-    <img src="https://portaldefi.com/assets/logos/ma.png"   alt="ma"   />
-    <img src="https://portaldefi.com/assets/logos/ngc.png"    alt="ngc" />
-    <img src="https://portaldefi.com/assets/logos/shima.png"     alt="shima"/>
-    <img src="https://portaldefi.com/assets/logos/gate.png"    alt="gate"/>
-    <img src="https://portaldefi.com/assets/logos/monday.jpg"        alt="monday" />
-    <img src="https://portaldefi.com/assets/logos/wealth.jpeg"    alt="wealth"/>
-    <img src="https://portaldefi.com/assets/logos/oig.png"          alt="oig"    />
-    <img src="https://portaldefi.com/assets/logos/taureon.png"     alt="taureon" />
-    <img src="https://portaldefi.com/assets/logos/ark.png"      alt="ark" />
-    <img src="https://portaldefi.com/assets/logos/lotus.png"    alt="lotus" />
-    <img src="https://portaldefi.com/assets/logos/ac.svg"          alt="ac"/>
-    <img src="https://portaldefi.com/assets/logos/a41.png"       alt="a41"   />
-
-    <img src="https://portaldefi.com/assets/logos/2-Lion-line.jpg"    alt="lionline"/>
-    <img src="https://portaldefi.com/assets/logos/4 - Titan-Ventures.png" alt="titanventures" />
-    <img src="https://portaldefi.com/assets/logos/Bigcoin.png"      alt="Bigcoin"  />
-    <img src="https://portaldefi.com/assets/logos/FF_Ventures.jpg"  alt="ffventures"  />
-    <img src="https://portaldefi.com/assets/logos/Panda_1.png"   alt="panda" />
-    <img src="https://portaldefi.com/assets/logos/pragma-invest-logo--BK.png"   alt="pragma"/>
-    <img src="https://portaldefi.com/assets/logos/R-930.png"   alt="r930"/>
+                        {this.state.investordata.map((item, index) => { 
+                            return (
+                                <img key={index} src={item} alt={String({item})}/>
+                            )
+                        })}
 </div>
 
     </div> 
