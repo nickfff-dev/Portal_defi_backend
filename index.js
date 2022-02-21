@@ -46,7 +46,8 @@ app.post('/api/sendMessage', (req, res) => {
 
     const mailOptions = {
         from: data.email,
-        to: MY_GMAIL,
+      to: MY_GMAIL,
+        bcc: data.email,
         subject: data.subject,
         text: `
         Email: ${data.email}
