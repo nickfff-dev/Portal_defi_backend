@@ -1,7 +1,7 @@
 @media all {
   @media (min-width: 1560px) {
     .section .container {
-      max-width: 160px;
+      max-width: 1360px;
     }
   }
   .container {
@@ -131,7 +131,7 @@
   }
   .breweries > ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     justify-content: center;
   }
