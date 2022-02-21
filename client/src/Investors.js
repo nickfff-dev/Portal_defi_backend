@@ -29,9 +29,12 @@ import pragma from "./images/logos/pragma-invest-logo--BK.png"
 import r930 from "./images/logos/R-930.png"
 
 
+// imported all the logos from the images/logo folder and assigned the name of the logo to a variable
+
 class Investors extends Component {
     constructor(props) {
         super(props)
+        // add all the imported logos to an array in the state
         this.state = {
                 investordata: [cb, republic, xrp, b21, okex, azer, kryptal, ld, ma, ngc, shima, gate, monday, wealth, oig, taureon, ark, lotus, ac, a41, lion, titan, bigcoin, ff, panda, pragma, r930]
         }
@@ -45,7 +48,8 @@ class Investors extends Component {
             <h1>Some of our backers ...</h1>
         </div> 
         
-        <div className="investor_logos">
+                    <div className="investor_logos">
+                        {/* loop through the array of logos in state and render them to the page */}
                         {this.state.investordata.map((item, index) => { 
                             return (
                                 <img key={index} src={item} alt={String({item})}/>

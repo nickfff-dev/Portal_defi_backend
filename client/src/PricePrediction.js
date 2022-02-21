@@ -4,7 +4,10 @@ import anime from 'animejs/lib/anime.es.js';
 
 class PricePrediction extends Component {
 
-    componentDidMount() { 
+  // function to animate sphere executes when the component mounts
+  componentDidMount() { 
+      
+    // function to fit the sphere to the screen
         function fitElementToParent(el, padding) {
             var timeout = null;
             function resize() {
@@ -20,17 +23,22 @@ class PricePrediction extends Component {
             resize();
             window.addEventListener('resize', resize);
           }
-          
+           
+    
+    // self calling function to apply animation to the sphere svg and its path
             (function() {
           
+              // select the sphere svg and its path
             var sphereEl = document.querySelector('.sphere-animation');
-            var spherePathEls = sphereEl.querySelectorAll('.sphere path');
+              var spherePathEls = sphereEl.querySelectorAll('.sphere path');
+              // set the path to the correct length
             var pathLength = spherePathEls.length;
             
-            var aimations = [];
-          
+              var aimations = [];
+              
+          // fit the sphere to the screen
             fitElementToParent(sphereEl);
-          
+          // define breathAnimation
             var breathAnimation = anime({
               begin: function() {
                 for (var i = 0; i < pathLength; i++) {
@@ -53,7 +61,7 @@ class PricePrediction extends Component {
               duration: Infinity,
               autoplay: false
             });
-          
+          // define introAnimation
             var introAnimation = anime.timeline({
               autoplay: false
             })
@@ -70,6 +78,7 @@ class PricePrediction extends Component {
               easing: 'linear'
             }, 0);
           
+            // define shadow animation
             var shadowAnimation = anime({
                 targets: '#sphereGradient',
                 x1: '25%',
@@ -81,6 +90,7 @@ class PricePrediction extends Component {
                 autoplay: false
               }, 0);
           
+              // apply the three animations defined above to the sphere
             function init() {
               introAnimation.play();
               breathAnimation.play();

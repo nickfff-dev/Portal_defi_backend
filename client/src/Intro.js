@@ -9,12 +9,18 @@ class Intro extends Component {
 
 
   componentDidMount() {
-    var pathEls = document.querySelectorAll('path');
+    // select all elements with tag path
+    var pathEls = document.querySelectorAll('path'); 
+
+  //  loop through all elements set the initial dash offset
 for (var i = 0; i < pathEls.length; i++) {
   var pathEl = pathEls[i];
   var offset = anime.setDashoffset(pathEl);
   pathEl.setAttribute('stroke-dashoffset', offset);
+
+  // create animation with this settings on each path elment
   anime({
+    
     targets: pathEl,
     strokeDashoffset: [offset, 0],
     duration: anime.random(1000, 3000),
@@ -25,6 +31,7 @@ for (var i = 0; i < pathEls.length; i++) {
     autoplay: true
   });
     }
+    // second animation onload 
     var tl = anime.timeline({
       easing: 'easeOutExpo',
       duration: 750

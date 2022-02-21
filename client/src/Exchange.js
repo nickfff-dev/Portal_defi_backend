@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./exchange.css"
+import laptop from "./images/laptop-illustration.png";
 
 class Exchange extends Component {
     render() {
@@ -21,7 +22,7 @@ class Exchange extends Component {
                         <span><b>Computation Markets</b><br/>Users are able to deploy complex programs for blinded execution by a network of peers. Portal swaps pay bonded Bitcoin when “requests for computation” are answered. Contracts assure proof of performance and payment for either party.</span>
                     </div> 
                     
-                    <img src="https://portaldefi.com/assets/laptop-illustration.png" className="to-laptop" alt="laptop" />
+                    <img src={laptop} className="to-laptop" alt="laptop" />
             
                 
                 </div> 

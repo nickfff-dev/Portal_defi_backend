@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./footer.css";
+import logo from "./images/portal-logo.gif"
 
 class Footer extends Component {
     render() {
@@ -8,7 +9,7 @@ class Footer extends Component {
             <div className="container">
             <p>Interested in joining us? <a href="https://angel.co/company/portal_finance/jobs">See our job listings</a></p>
               <ul className="feature-resources">
-                <li><div className="left"><img src="https://portaldefi.com/assets/portal-logo.gif" className="logo-footer" alt="logofoot"/></div></li>
+                <li><div className="left"><img src={logo} className="logo-footer" alt="logofoot"/></div></li>
                 <li><a href="https://github.com/FabricLabs/fabric" ><i className="fa-brands fa-github"></i></a></li>
                 <li><a href="https://twitter.com/portal_finance" ><i className="fa-brands fa-twitter"></i></a></li>
                 <li><a href="https://t.me/getportal" ><i className="fa-brands fa-telegram"></i></a></li>

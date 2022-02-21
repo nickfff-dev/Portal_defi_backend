@@ -18,18 +18,23 @@ class Contact extends Component {
         this.handleSubmit = this.handleSubmit.bind(this)
         this.resetForm = this.resetForm.bind(this)
     }
-
+    
+    // function for adding typedin subject text  to state
     onSubjectChange(event) {
         event.preventDefault()
         
         this.setState({subject: event.target.value})
     }
+
+    // function for adding typedin email text  to state
     onEmailChange(event) {
         event.preventDefault()
         
         this.setState({email: event.target.value})
 
     }
+
+    // function for adding typedin message text  to state
     onMessageChange(event) {
         event.preventDefault()
         
@@ -39,7 +44,7 @@ class Contact extends Component {
    
 
 
-
+    // function to remove entered values from ui after submit
     resetForm(){
         return this.setState({
             subject: '',
@@ -47,33 +52,39 @@ class Contact extends Component {
             message: ''
         })
     }
+
+    // function to send email to backend
     handleSubmit(e) {
         e.preventDefault();
-
+    //   check if email is not empty and message is not empty then send to back end else alert user to fill
        if( this.state.subject !== '' && this.state.email !== '' && this.state.message !== '' )
         
        {
+        //    get data from state to axios data object
         const data = {
             subject: this.state.subject,
             email: this.state.email,
             message: this.state.message
         }
-
+        //   use axios to make the post request to backend and bind the response to the res variable
           axios.post('/api/sendMessage', data)
           .then((res)=>{
             
-            if (res.data === "Send email successfully") {
+              if (res.data === "Send email successfully") {
+                // alert if email sent succesfully
               alert("Message Sent.");
               this.resetForm()
   
               
-            } else  {
+            } else {
+                // alert if error in sending message from backend
                 alert("Message failed to send.")
                 this.resetForm()
             }
           })
          
-   }else{
+       } else { 
+        //    alert if field is empty
        alert("Please fill in all fields.")
    }
            
