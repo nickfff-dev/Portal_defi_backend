@@ -5,6 +5,7 @@ const smtpTransport = require('nodemailer-smtp-transport');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
+const fetch = require('node-fetch');
 
 
 
@@ -31,7 +32,10 @@ app.post('/api/sendMessage', (req, res) => {
   
     console.log(req.body)
    
-    
+  const SECRET_KEY = "6LeVU58eAAAAAPV9KecqNujGL9EhSD95CBa4KlXe"
+  const maresponse = data.token
+  
+  
   
 
     const transporter = nodemailer.createTransport(smtpTransport({
@@ -54,18 +58,37 @@ app.post('/api/sendMessage', (req, res) => {
 
         Subject: ${data.subject}
 
-        Message: ${data.message}
-        `
-    };
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          console.log(error);
-        } else {
-          res.status(200).send('Send email successfully');
-          console.log('Email sent: ' + info.response);
-        }
-      });
+        Message: ${data.message} 
 
+
+
+
+        above is a copy for your records.
+        `
+  };
+  fetch("https://www.google.com/recaptcha/api/siteverify", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: `secret=${SECRET_KEY}&response=${maresponse}`,
+  })
+    .then(response => response.json())
+    .then(response => { 
+      console.log(response)
+        if(response.success){
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    console.log(error);
+                } else {
+                    console.log('Message sent: %s', info.messageId);
+                    res.status(200).send('Send email successfully');
+                }
+            });
+        }else{
+            res.send('Something went wrong')}
+      
+    })
+ 
+  
     
     
 });

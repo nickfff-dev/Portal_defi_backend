@@ -1,4 +1,4 @@
-
+/* introducing the fonts to the application */
   @font-face {
     font-family: "AvenirNext-Medium";
     src: local("AvenirLTStd-Medium"),
@@ -22,7 +22,7 @@
   }
 
 
- 
+ /* footer icons */
   @font-face {
     font-family: "Font Awesome 6 Brands";
     font-style: normal;

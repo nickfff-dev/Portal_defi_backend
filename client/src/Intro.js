@@ -98,7 +98,6 @@ for (var i = 0; i < pathEls.length; i++) {
       </div>
     </div>
   </section>
-  
   <section className="three" id="layer1" style={{ transform: "translateX(0px)" }}>
     <div className="layer-container">
       <div className="layer platforms">
@@ -106,12 +105,10 @@ for (var i = 0; i < pathEls.length; i++) {
       </div>
     </div>
   </section>
-
 </div>
         </div>
 
     </div> 
-    
 </div>
         );
     }

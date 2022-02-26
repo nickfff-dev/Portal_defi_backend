@@ -37,7 +37,7 @@ class Videosec extends Component {
   return (
       <li key={index}>  <Embed as="div"    url={`https://www.youtube.com/embed/${embedy.id}`} width="100%" height="500" active={true}  onClick={this.onClickHandler.bind(this)}  className="embed" style={{ background: `url(${embedy.placeholder}) center center / cover rgb(0, 0, 0)`,  width: "339px", height: "149px" }}/> 
       <p>{embedy.title}</p>  </li>)})}
-        
+
                     </ul>
                 </div>
         

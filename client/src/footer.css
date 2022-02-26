@@ -1,6 +1,6 @@
 @media all {
   .section.footer {
-    background: url(https://portaldefi.com/assets/black-fade) repeat-x center;
+    background: url("./images/black-fade.jpg") repeat-x center;
     background-size: cover;
     height: 20vh;
 

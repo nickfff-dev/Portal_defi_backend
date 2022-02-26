@@ -75,7 +75,7 @@
     display: inline-block;
   }
   .section.institutions {
-    background: url(https://portaldefi.com/assets/background-institutions.jpg) top
+    background: url("./images/background-institutions.jpg") top
       #081119;
     background-size: cover;
     height: 60vh;
