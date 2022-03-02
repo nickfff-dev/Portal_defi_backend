@@ -9,8 +9,44 @@ import Menuclose from "./images/menu-close.svg"
 
 
 class Header extends Component {
+  constructor(props) { 
+    super(props);
+    
+
+    this.mwaref = React.createRef();
+    this.menuClose = this.menuClose.bind(this);
+    this.menuOpen = this.menuOpen.bind(this);
+    this.handleResize = this.handleResize.bind(this);
+
+
+  }
 
  
+
+
+
+
+  menuOpen() {
+    this.mwaref.current.style.display = "block";
+    this.mwaref.current.style.width = "50%";
+
+  }
+  menuClose() {
+    this.mwaref.current.style.display = "none";
+  }
+ 
+  handleResize = () => { 
+    if (window.innerWidth < 880) {  
+      document.getElementById("menu").classList.add("mobile");
+    }
+    else { 
+      document.getElementById("menu").classList.remove("mobile");
+    }
+  }
+
+  componentDidMount() { 
+    window.addEventListener("resize", this.handleResize);
+  }
 
     render() {
         return (
@@ -20,11 +56,11 @@ class Header extends Component {
                 <img src={Logo} alt="header-logo"/>
               </div>
               <div className="menu-container">
-                <div className="menu-open">
-                  <img src={Menuopen} alt="open-menu"/> 
+                <div className="menu-open" onClick={this.menuOpen}>
+                  <img src={Menuopen} alt="open-menu" /> 
                 </div>
-                <div className="menu">
-                  <div className="menu-close">
+                <div className="menu" id="menu" ref={this.mwaref}>
+                  <div className="menu-close" onClick={this.menuClose}>
                     <img src={Menuclose} alt="close-menu"/> 
                   </div>
                   <div className="tabs" id="website-menu">
