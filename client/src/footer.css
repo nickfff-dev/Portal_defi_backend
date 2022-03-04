@@ -141,11 +141,11 @@
   }
   ul.feature-resources {
     list-style: none;
-    padding-top: 20px;
+    margin-top: 20px;
   }
   ul.feature-resources li {
     font-size: 14px;
-    padding: 10px;
+    padding: 8px;
     font-family: "AvenirNext-Medium";
     color: #ffffff;
     opacity: 0.8;
@@ -187,3 +187,11 @@
 .fa-twitter:before {
   content: "\f099";
 }
+
+.fa-user-astronaut:before {
+  content:"\f4fb";
+}
+
+.fa-discord:before{
+  content:"\f392"
+  }
